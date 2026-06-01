@@ -1,106 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Landing Page</title>
 
-    <meta name="description" content="Currículum de Adrián Gil Marín, estudiante de DAW en prácticas en Geoinnova. Portfolio y tecnologías web y SIG.">
+  <link rel="stylesheet" href="style.css" />
 
-    <title>mi-landing-docker</title>
-
-    <link rel="icon" href="img/favicon.png" type="image/png">
-
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
-
 <body>
 
-    <nav class="navbar">
+  <header>
+    <h1>Mi Landing Page</h1>
+    <p>Práctica de JavaScript, Leaflet y GitHub Pages</p>
+  </header>
 
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#estudios">Estudios</a>
-        <a href="#tecnologias">Tecnologías</a>
-        <a href="#contacto">Contacto</a>
+  <main>
 
-    </nav>
+    <section>
+      <h2>Bienvenida</h2>
+      <p id="mensaje"></p>
+    </section>
 
-    <header class="header" id="inicio">
+    <section>
+      <h2>Modo oscuro</h2>
+      <button id="modoBtn">Cambiar modo</button>
+    </section>
 
-        <img src="mi-landing-docker-imagenes\logo.png" alt="Logo de Geoinnova" class="logo">
+    <section>
+      <h2>Ubicación del instituto</h2>
+      <div id="mapa"></div>
+    </section>
 
-        <img src="mi-landing-docker-imagenes\descarga.jpg" alt="Foto de perfil de Adrián Gil Marín" class="perfil">
+  </main>
 
-        <h1></h1>
+  <footer>
+    <p>Proyecto realizado con HTML, CSS y JavaScript</p>
+  </footer>
 
-        <h1><strong>Proyecto mi-landing-docker</strong></h1>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-    </header>
-
-    <main class="container">
-
-        <section class="card" id="sobre-mi">
-
-            <h2>Sobre Mí</h2>
-
-            <p><strong>Nombre:</strong> Adrián</p>
-            <p><strong>Apellidos:</strong> Gil Marín</p>
-
-        </section>
-
-            <section class="card" id="presentación">
-
-            <h2>Presentación</h2>
-
-            <p>
-                Mi nombre es Adrián Gil Marín y estoy empezando con las Practicas de DAW en la empresa Geoinnova, espero aprender mucho.
-                </p>
-
-        </section>
-        
-        <section class="card" id="estudios">
-
-            <h2>Estudios Actuales</h2>
-
-            <ul>
-                <li>ESO</li>
-                <li>Grado Medio en Sistemas Microinformáticos y Redes</li>
-                <li>DAW (Desarrollo de Aplicaciones Web)</li>
-            </ul>
-
-        <section class="card" id="tecnologias">
-
-            <h2>Tecnologías que conozco</h2>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git y GitHub</li>
-            </ul>
-
-        </section>
-
-        <section class="card" id="contacto">
-
-            <h2>Contacto</h2>
-
-            <p>Email: <a href="mailto:agm121006@gmail.com">agm121006@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com" target="_blank">Perfil</a></p>
-
-        </section>
-
-    </main>
-
-    <footer class="footer">
-
-        <a href="mailto:agm121006@gmail.com">Gmail</a> |
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-        <a href="#">Política de Cookies</a> |
-        <a href="#">Aviso Legal</a>
-
-    </footer>
+  <script src="script.js"></script>
 
 </body>
-
 </html>
